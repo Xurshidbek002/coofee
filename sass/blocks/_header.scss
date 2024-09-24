@@ -1,0 +1,22 @@
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 0;
+  }
+
+  &__box {
+    width: 283px;
+    display: flex;
+    justify-content: space-between;
+    &-link {
+      font-family: Barlow;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0.9230769276618958px;
+      text-align: left;
+      color: $grey;
+    }
+  }
+}
