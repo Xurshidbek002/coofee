@@ -2,6 +2,7 @@
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 45px 0;
   }
 
@@ -17,6 +18,50 @@
       letter-spacing: 0.9230769276618958px;
       text-align: left;
       color: $grey;
+      &:hover {
+        color: $dark-kyan;
+      }
+    }
+  }
+  &-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 689px) {
+  .header {
+    &-icon {
+      width: 190px;
+      margin-right: 20px;
+    }
+
+    &__box {
+      width: 200px;
+      &-link {
+        font-size: 7px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    .container {
+      align-items: center;
+    }
+    &-icon {
+      width: 163px;
+    }
+    .container {
+      position: relative;
+    }
+    &__box {
+      display: none;
+    }
+    &-menu {
+      display: block;
+      position: absolute;
+      right: 5px;
     }
   }
 }
