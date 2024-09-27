@@ -1,0 +1,126 @@
+.footer {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  .container {
+    background-color: $dark-grey;
+    width: 100%;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 20px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 39px;
+
+    &-link {
+      font-family: Barlow;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0.9230769276618958px;
+      text-align: left;
+      color: $grey;
+
+      &:hover {
+        color: $light-cream;
+      }
+    }
+  }
+  &__subnav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    .container {
+      background-color: $dark-grey;
+      width: 100%;
+      border-radius: 10px;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 30px;
+
+      padding: 30px 20px;
+    }
+
+    &__nav {
+      display: flex;
+      gap: 39px;
+
+      &-link {
+        font-family: Barlow;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.9230769276618958px;
+        text-align: left;
+        color: $grey;
+
+        &:hover {
+          color: $light-cream;
+        }
+      }
+    }
+    &__subnav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .footer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    .container {
+      background-color: $dark-grey;
+      width: 100%;
+      border-radius: 10px;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 30px;
+
+      padding: 30px 20px;
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      gap: 39px;
+
+      &-link {
+        font-family: Barlow;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.9230769276618958px;
+        text-align: center;
+        color: $grey;
+
+        &:hover {
+          color: $light-cream;
+        }
+      }
+    }
+    &__subnav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
